@@ -22,8 +22,18 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
-x64/
-x86/
+[Dd]ebug/x64/
+[Dd]ebugPublic/x64/
+[Rr]elease/x64/
+[Rr]eleases/x64/
+bin/x64/
+obj/x64/
+[Dd]ebug/x86/
+[Dd]ebugPublic/x86/
+[Rr]elease/x86/
+[Rr]eleases/x86/
+bin/x86/
+obj/x86/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
@@ -33,7 +43,6 @@ bld/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
-
 # Build results on 'Bin' directories
 **/[Bb]in/*
 # Uncomment if you have tasks that rely on *.refresh files to move binaries
@@ -57,7 +66,6 @@ Generated\ Files/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
-
 # Approval Tests result files
 *.received.*
 
@@ -210,8 +218,10 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
+
 # NuGet Symbol Packages
 *.snupkg
+
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -344,8 +354,8 @@ paket-files/
 *.pyc
 
 # Cake - Uncomment if you are using it
-#tools/**
-#!tools/packages.config
+# tools/**
+# !tools/packages.config
 
 # Tabs Studio
 *.tss
@@ -375,7 +385,7 @@ MSBuild_Logs/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
-# MFractors (Xamarin productivity tool) working folder
+# MFractor (Xamarin productivity tool) working folder
 **/.mfractor/
 
 # Local History for Visual Studio
@@ -409,10 +419,23 @@ FodyWeavers.xsd
 
 # Built Visual Studio Code Extensions
 *.vsix
-
 # Windows Installer files from build outputs
 *.cab
 *.msi
 *.msix
 *.msm
 *.msp
+
+# JetBrains Rider
+*.sln.iml
+
+# Android files
+*.keystore.*
+Resource.designer.cs
+
+# macOS files
+.DS_Store
+
+# Unused code and data
+\@Archive/
+\@ Archive/

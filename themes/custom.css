@@ -1,0 +1,158 @@
+/* @theme custom */
+
+/* Magic of step-through is "*" bullet points (w/ "list-style-type: none;") */
+
+@import 'uncover';
+
+@font-face {
+  font-family: Biryani_ExtraBold;
+  src: url('../fonts/Google Fonts/Biryani/Biryani-ExtraBold.ttf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Biryani_SemiBold;
+  src: url('../fonts/Google Fonts/Biryani/Biryani-SemiBold.ttf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Pangolin;
+  src: url('../fonts/Google Fonts/Pangolin/Pangolin-Regular.ttf');
+  font-weight: regular;
+}
+
+div.attribution {
+  font-size: 16px;
+  padding-top: 24px;
+}
+
+section.details img {
+  margin: 0.5em 0;
+}
+
+div.detail-summary,
+section.details ul li {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+div.commentary ul li {
+  font-size: 24px;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+}
+
+div.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+div.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+div.two-columns-uneven {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+section {
+  font-family: Biryani_SemiBold;
+}
+
+section.details h3,
+section.section_title h2,
+section.summary h3,
+section.talk_topics h3 {
+  line-height: 1em;
+}
+
+section.details ul li {
+  line-height: 1.5em;
+}
+
+section.details ul li b {
+  font-family: Biryani_ExtraBold;
+}
+
+section.section_title h4 {
+  font-size: 36px;
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+div.commentary ul,
+section.section_title,
+section.section_title ul li {
+  font-family: Pangolin, cursive;
+  text-align: center;
+}
+
+section.section_title h2 {
+  line-height: 1em;
+  margin: 0;
+}
+
+section.section_title h3 {
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+section.section_title ul li {
+  list-style-type: none;
+}
+
+section.summary ul li {
+  font-size: 36px;
+  line-height: 1.75em;
+}
+
+section.talk_title h1 {
+  line-height: 1.75em;
+}
+
+section.talk_title h2,
+section.talk_title ul li {
+  line-height: 1.75em;
+}
+
+section.talk_topics ul li {
+  font-size: 36px;
+  line-height: 2em;
+}
+
+/* HACK */
+span.break {
+  line-height: 2em;
+}
